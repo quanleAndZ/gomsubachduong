@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "definitions/config";
 
 export const BannerCateWrapper = styled.div`
-  padding: 8px 8px 12px 8px;
+  padding: 2px 0px 0px 0px;
   border: solid 1px #ddd;
   border-right: 0;
   border-top: 0;
@@ -32,7 +32,7 @@ export const BannerCateWrapper = styled.div`
 
   img {
     width: 100%;
-    max-height: 350px;
+    max-height: 100%;
   }
 
   @media ${device.mobile} {

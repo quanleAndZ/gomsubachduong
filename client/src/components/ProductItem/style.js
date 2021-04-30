@@ -74,14 +74,15 @@ export const ProductItemWrapper = styled.div`
   }
 
   .p-icon_new {
-    top: 20px;
+    top: 10px;
     z-index: 9;
     right: 10px;
     position: absolute;
-    padding: 5px 10px;
+    padding: 3px 3px;
     border-radius: 3px;
     background-color: #9a3839;
     color: #fff;
+    font-size: 14px;
   }
 
   .p-act {

@@ -27,8 +27,8 @@ export const ProductWithCategoryWrapper = styled.div`
   margin-top: 20px;
   .title {
     background: #f3f3f3;
-    border-bottom: 2px solid #945425;
-    border-top: 1px solid #ddd;
+    border-bottom: 2px solid #553216;
+    /*border-top: 1px solid #ddd;*/
     overflow: hidden;
     height: 42px;
     .h-title {

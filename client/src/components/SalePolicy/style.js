@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import IconCsbh from "assets/img/icon-csbh.png";
+import { device } from "definitions/config";
+
+
 
 export const SalePolicyWrapper = styled.div`
   .csbh-hp {
@@ -7,6 +10,11 @@ export const SalePolicyWrapper = styled.div`
     background: #fff;
     margin-bottom: 10px;
     font-size: 13px;
+  }
+
+  
+  @media ${device.mobile} {
+    display: none;
   }
 
   .h-title {

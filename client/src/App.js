@@ -15,7 +15,7 @@ function App() {
 }
 
 const AppWarraper = styled.div`
-  background-color: #fff2e6;
+  background-color: #eee;
   padding: 0;
 `;
 

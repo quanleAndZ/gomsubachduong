@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import BgTitle from "assets/img/BannerFooter.jpg";
+import BgTitle from "assets/img/bg-title.jpg";
+import BgTitle2 from "assets/img/BannerFooter.jpg";
 import { device } from "definitions/config";
 
 export const FooterBottom = styled.div`
@@ -29,7 +30,7 @@ export const FooterBottom = styled.div`
 
 export const BackToTop = styled.div`
   position: fixed;
-  right: 0;
+  right: 10px;
   bottom: 100px;
   margin-top: -90px;
   z-index: 99;

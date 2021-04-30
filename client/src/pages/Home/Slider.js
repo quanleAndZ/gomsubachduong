@@ -2,16 +2,11 @@
 import React from "react";
 import { SliderSlick } from "./style";
 
-import ImgSlider1 from "assets/img/slider/8.jpg";
-import ImgSlider2 from "assets/img/slider/9.jpg";
+import ImgSlider1 from "assets/img/slider/10.jpg";
 
 const sliders = [
   {
     img: ImgSlider1,
-    link: "",
-  },
-  {
-    img: ImgSlider2,
     link: "",
   },
 ];

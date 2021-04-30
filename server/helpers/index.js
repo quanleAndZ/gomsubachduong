@@ -1,5 +1,6 @@
 const path = require("path");
 const config = require("config");
+const os = require("os")
 const fs = require("fs");
 const Jimp = require("jimp");
 const imagemin = require("imagemin");
@@ -7,6 +8,7 @@ const imageminJpegtran = require("imagemin-jpegtran");
 const imageminPngquant = require("imagemin-pngquant");
 const imageminMozjpeg = require("imagemin-mozjpeg");
 const { cloneDeep } = require("lodash");
+
 
 exports.getFullUrlMediaUpload = (fileName, _path = "products") => {
   const file = path.resolve(
@@ -24,7 +26,8 @@ exports.removeImageResize = (
   photo,
   _path = config.get("app.upload_product_dir")
 ) => {
-  Object.keys(photo).forEach((key) => {
+
+ photo && Object.keys(photo).forEach((key) => {
     if (
       photo[key] &&
       photo[key].filename &&
@@ -37,7 +40,8 @@ exports.removeImageResize = (
 
 const compress = async (filepath, min = 0.6, max = 0.8) => {
   try {
-    const files = await imagemin([`${filepath}`], {
+    filepath = os.type() === "Windows_NT" ? filepath.replace(/\\/g, '/') : filepath;
+    const files = await imagemin([filepath], {
       destination: config.get("app.temp_dir"),
       plugins: [
         imageminMozjpeg({
@@ -48,6 +52,7 @@ const compress = async (filepath, min = 0.6, max = 0.8) => {
         }),
       ],
     });
+    console.log("2", files)
     return files[0] || null;
   } catch (error) {
     return null;
@@ -67,6 +72,7 @@ exports.uploadImageResize = async (
   originalname,
   _path = config.get("app.upload_product_dir")
 ) => {
+  
   const fileHasCompress = await compress(tempFile);
   const filename = [slugName, Math.floor(Math.random() * 10000)].join("-");
   const sizes = {};
@@ -104,6 +110,8 @@ exports.uploadImageResize = async (
 
     fs.renameSync(tempFile, path.resolve(_path, sizes["full"].filename));
   }
+
+  console.log(sizes)
   return sizes;
 };
 

@@ -14,11 +14,12 @@ export const CartWrapper = styled.div`
     }
 
     img {
-      width: 50px;
+      width: 100px;
     }
   }
 
   .cart-right-input {
+    margin-top: 10px;
     border: solid 1px #a5383b;
     padding-bottom: 10px;
     .title {
@@ -50,7 +51,7 @@ export const CartWrapper = styled.div`
   textarea,
   input {
     width: 100%;
-    height: 34px;
+    height: 25px;
     border-radius: 3px;
     border: solid 1px #ccc;
     padding: 0 5px;
@@ -58,9 +59,15 @@ export const CartWrapper = styled.div`
     max-width: 100%;
   }
 
+  textarea,
+  input #note{
+    height:150px;
+  }
+
   .submit {
     border: 0;
-    background: #a33c3d;
+    background: #1aaf1ec7;
+    margin-top:10px;
     padding: 8px;
     color: #fff;
     text-transform: uppercase;

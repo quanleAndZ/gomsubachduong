@@ -222,7 +222,7 @@ export const NavBarWrapper = styled.div`
             font-weight: normal;
             margin: 0;
             padding: 5px 0;
-            color: #a43b3f;
+            color: #553216;
             font-size: 14px;
             white-space: nowrap;
             overflow: hidden;

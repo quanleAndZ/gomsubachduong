@@ -110,7 +110,7 @@ const CartPage = () => {
                   style={{
                     backgroundColor: "#f5f5f5",
                     fontWeight: "bold",
-                    textTransform: "uppercase",
+                    textTransform: "none",
                   }}
                 >
                   <td>Tên sản phẩm</td>
@@ -134,7 +134,7 @@ const CartPage = () => {
                           type="number"
                           min={1}
                           onChange={(e) => onChangeInput(e, item.id)}
-                          style={{ width: 60, textAlign: "center" }}
+                          style={{ width: 40, textAlign: "center" }}
                         />
                       </td>
                       <td>
@@ -200,7 +200,7 @@ const CartPage = () => {
                   placeholder="Dùng để liên lạc khi giao hàng"
                 />
               </p>
-              <p>
+              {/* <p>
                 <label>Email *</label>
                 <input
                   type="text"
@@ -209,7 +209,7 @@ const CartPage = () => {
                   value={orderInput?.email}
                   placeholder="Để nhận thông báo đơn hàng"
                 />
-              </p>
+              </p> */}
               <p>
                 <label>Địa chỉ*</label>
                 <input
@@ -223,6 +223,7 @@ const CartPage = () => {
               <p>
                 <label>Ghi chú</label>
                 <textarea
+                  id="note"
                   name="note"
                   onChange={onChangeOrderInput}
                   value={orderInput?.note}
@@ -239,10 +240,10 @@ const CartPage = () => {
             )) ||
               null}
 
-            <span className="text-btn-cart">
+            {/* <span className="text-btn-cart">
               Tư vấn viên sẽ gọi điện thoại xác nhận,
               <br /> không mua không sao
-            </span>
+            </span> */}
           </Col>
         </Row>
       </Container>

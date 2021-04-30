@@ -15,6 +15,7 @@ require("../common/setup");
  *
  */
 app.use("/assets", express.static(path.resolve("server/public")));
+app.use("/assets/storage", express.static(path.resolve("server/storage/public")));
 app.use(express.static(path.resolve("client/build")));
 
 /**

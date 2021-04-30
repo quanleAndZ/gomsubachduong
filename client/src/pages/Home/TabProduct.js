@@ -9,15 +9,15 @@ import { NavTab, NavItemTab, NavLinkTab } from "./style";
 
 const TabProduct = () => {
   const [tabs, setTabs] = React.useState([
-    {
-      id: "san-pham-khuyen-mai",
-      title: "Sản phẩm khuyến mãi",
-      products: [],
-      params: {
-        is_promotion: "true",
-        limit: 4,
-      },
-    },
+    // {
+    //   id: "san-pham-khuyen-mai",
+    //   title: "Sản phẩm khuyến mãi",
+    //   products: [],
+    //   params: {
+    //     is_promotion: "true",
+    //     limit: 4,
+    //   },
+    // },
     {
       id: "san-pham-ban-chay",
       title: "Sản phẩm bán chạy",

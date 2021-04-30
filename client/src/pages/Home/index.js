@@ -24,7 +24,7 @@ const HomePage = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Trang chủ</title>
+        <title>Gốm Sứ Bạch Dương - Bát Tràng</title>
       </Helmet>
       {/* <Container> */}
       <Row>
@@ -33,21 +33,21 @@ const HomePage = () => {
         </Col>
       </Row>
       {/* </Container> */}
-      <Container>
-        <Row>
-          <Col md="9">
+      <Row>
+          <Col md="12">
             <TabProduct />
           </Col>
-          <Col md="3" className="d-none d-md-block d-xl-block d-lg-block">
+          {/* <Col md="3" className="d-none d-md-block d-xl-block d-lg-block">
             <SalePolicy />
-          </Col>
+          </Col> */}
         </Row>
         <Row>
           <Col md="12">
             <ProductWithCategory />
           </Col>
         </Row>
-      </Container>
+      {/* <Container>
+      </Container> */}
     </React.Fragment>
   );
 };

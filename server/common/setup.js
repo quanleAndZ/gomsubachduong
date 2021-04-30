@@ -28,9 +28,9 @@ if (!fs.existsSync(config.get("app.temp_dir"))) {
   fs.mkdirSync(config.get("app.temp_dir"));
 }
 
-if (!fs.existsSync(path.resolve("server/public/storage"))) {
-  fs.symlinkSync(
-    path.resolve("server/storage/public"),
-    path.resolve("server/public/storage")
-  );
-}
+// if (!fs.existsSync(path.resolve("server/public/storage"))) {
+//   fs.symlinkSync(
+//     path.resolve("server/storage/public"),
+//     path.resolve("server/public/storage")
+//   );
+// }

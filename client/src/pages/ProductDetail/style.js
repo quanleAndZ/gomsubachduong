@@ -171,7 +171,7 @@ export const ProductInfoWrapper = styled.div`
       font-size: 21px;
       color: yellow;
       right: 0;
-      top: -37px;
+      top: -50px;
     }
   }
 `;

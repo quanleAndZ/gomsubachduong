@@ -4,6 +4,7 @@
 import Gmaps from "assets/img/ggmaos.JPG"
 import ImgLogo from "assets/img/Logo Bạch Dương 1.png";
 import React from "react";
+import BgTitle2 from "assets/img/BannerFooter.jpg";
 import AvatarF1 from "assets/img/ser1_new.png"
 import AvatarF2 from "assets/img/ser3_new.png"
 import AvatarF3 from "assets/img/service_footer_2.png"
